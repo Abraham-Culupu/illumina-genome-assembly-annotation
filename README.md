@@ -1,8 +1,8 @@
-# illumina-genome-assembly-annotation 🧬
+# illumina-genome-assembly-annotation 
 
 This script performs an end-to-end workflow for processing Illumina paired-end reads, assembling bacterial genomes, and annotating them. It includes quality control, trimming, assembly, polishing, evaluation, and annotation steps.
 
-## 🔁 Workflow Overview
+##  Workflow Overview
 
 1. **Quality control**: FastQC + MultiQC
 2. **Read trimming**: Trimmomatic with adapter removal
@@ -11,7 +11,7 @@ This script performs an end-to-end workflow for processing Illumina paired-end r
 5. **Assembly evaluation**: QUAST (with optional reference)
 6. **Annotation**: Prokka
 
-## 📁 Directory Structure
+##  Directory Structure
 
 - `data/`: Raw Illumina reads (`*_R1.fastq.gz`, `*_R2.fastq.gz`)
 - `trimmed_reads/`: Trimmed reads output
@@ -21,7 +21,7 @@ This script performs an end-to-end workflow for processing Illumina paired-end r
 - `quast_results/`: Quality reports from QUAST
 - `annotation/`: Genome annotation results from Prokka
 
-## ⚙️ Requirements
+##  Requirements
 
 - fastqc
 - multiqc
@@ -40,7 +40,7 @@ conda create -n genome_pipeline_env -c bioconda -c conda-forge \
 conda activate genome_pipeline_env
 ```
 
-## 🚀 Running the Pipeline
+##  Running the Pipeline
 
 Make sure your input data is in the `data/` folder and named like:
 ```
@@ -53,12 +53,12 @@ Then run:
 bash genome_pipeline.sh
 ```
 
-## 📌 Notes
+##  Notes
 
 - Edit the `REFERENCE="reference.fasta"` variable in the script if you have a reference genome for QUAST.
 - Update the path to your adapter file: `TruSeq3-PE.fa`.
 
-## 👨‍🔬 Author
+##  Author
 
 **Abraham Espinoza Culupú**  
 Molecular biologist focused on microbial genomics and antimicrobial resistance.
